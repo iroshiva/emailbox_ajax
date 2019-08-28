@@ -1,0 +1,21 @@
+<li id="task-<%= task.id%>">
+  <div>
+    <% if task.status == true %>
+      <p id="strikethrough"><%= task.title  %>
+      
+     <% else %>
+      <p><%= task.title  %>
+    <% end %> 
+    <% unless task.deadline.nil? %>
+        , to read: <%= task.deadline.strftime('%D')  %>
+      <% end %>
+    </p>
+  </div>
+  <% if task.status == false %>
+    <%= check_box_tag :checkbox, 1, false, data: { remote: true, url:task_path(task.id) , params: { id:task.id, status:task.change_status}.to_param, method: "put" }, id: "check-#{task.id}"%>
+  <% else %>
+    <%= check_box_tag :checkbox, 1, true, data: { remote: true, url:task_path(task.id) , params: { id:task.id, status:task.change_status}.to_param, method: "put" }, id: "check-#{task.id}"%>
+
+  <% end %> 
+  <%= link_to "Delete", task_path(task.id), method: :delete, class: "btn btn-danger btn-sm", remote: true %>
+</li>

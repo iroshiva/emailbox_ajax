@@ -9,24 +9,22 @@
 	<div class="row">
 		<div class="col-6 col-md-4">
 		  <div class="list-group">
-			  <a class="list-group-item list-group-item-secondary">
+		  	<ul id="email-list">
+			  <li class="list-group-item list-group-item-secondary">
 			    Emails
-			  </a>
-			   <ul id="email-list">
+			  </li>
 			   <% @emails.each do |email| %>
 				  <li class="list-group-item list-group-item-action">
-				  <%= email.object %>
+				  <%= link_to email.object, email_path(email.id), remote: true %>
 				  </li>
 			   <% end %>
 			  </ul>
 			</div>
 		</div>
 	  <div class="col-12 col-md-8">
-	  	<div class="list-group">
-			  <a class="list-group-item list-group-item-secondary">
-			    Body emails
-			  </a>
-			</div>
+	  	<div id="affichage-mail">
+	  		
+		  </div>
 	  </div>
 	</div>
 </div>

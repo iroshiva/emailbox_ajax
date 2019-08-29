@@ -1,3 +1,9 @@
+<div class="container mb-5">
+	<div>
+		<%= link_to "Recevoir un email", emails_path, method: "post", class: "btn btn-success receive-btn", remote: true %>
+	</div>
+</div>
+
 
 <div class="container">
 	<div class="row">
@@ -6,11 +12,13 @@
 			  <a class="list-group-item list-group-item-secondary">
 			    Emails
 			  </a>
-			  <% @emails.each do |email| %>
-				  <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in
+			   <ul id="email-list">
+			   <% @emails.each do |email| %>
+				  <li class="list-group-item list-group-item-action">
 				  <%= email.object %>
-				  </a>
-			  <% end %>
+				  </li>
+			   <% end %>
+			  </ul>
 			</div>
 		</div>
 	  <div class="col-12 col-md-8">
@@ -22,25 +30,3 @@
 	  </div>
 	</div>
 </div>
-
-
-<!-- <div class="list-group">
-  <a href="#" class="list-group-item list-group-item-action active">
-    Emails
-  </a>
-  <% @emails.each do |email| %>
-	  <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in
-	  <%= email.object %>
-	  </a>
-  <% end %>
-</div>
-
-<div class="col-6 col-md-4"> Object Email
-	  	<ul class="list-group">
-	  			<% @emails.each do |email| %>
-	  		<li class="list-group-item">
-	  			<%= email.object %>
-	  		</li>
-	  		<% end %>
-	  	</ul>
-	  </div> -->

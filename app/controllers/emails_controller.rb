@@ -8,9 +8,18 @@ class EmailsController < ApplicationController
   end
 
   def new
+
   end
 
   def create
+    @email = Email.new(object:Faker::Book.title,
+    body:Faker::Lorem.paragraph)
+    @email.save
+    # flash.now[:success] = "Mail envoyé!"
+    respond_to do |format|
+      format.html { redirect_to root_path}
+      format.js { }
+    end
   end
 
   def edit

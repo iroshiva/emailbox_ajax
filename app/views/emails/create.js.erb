@@ -1,2 +1,2 @@
 
-$('#email-list').append('<li class="list-group-item list-group-item-action"><%= @email.object %></li>');
+$('#email-list').append("<%= j render 'emails_list', email: @email%>");

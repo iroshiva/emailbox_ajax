@@ -14,16 +14,16 @@
 			    Emails
 			  </li>
 			   <% @emails.each do |email| %>
-				  <li class="list-group-item list-group-item-action">
-				  <%= link_to email.object, email_path(email.id), remote: true %>
-				  </li>
+				  <a href="<%= email_path(email.id)%>" class="list-group-item list-group-item-action" data-remote="true" id="email-list">
+				    <%= email.object %>
+				  </a>
 			   <% end %>
 			  </ul>
 			</div>
 		</div>
 	  <div class="col-12 col-md-8">
 	  	<div id="affichage-mail">
-	  		
+
 		  </div>
 	  </div>
 	</div>

@@ -7,7 +7,7 @@
 	</li>
 	<li class="list-group-item list-group-item-action">
 		<%= link_to "Supprimer", email_path(email.id), method: :delete, remote: true, class: "btn btn-danger btn-sm" %>
-		<%= link_to "Marquer comme non lu", email_path(email.id), method: :put, remote: true, class: "btn btn-primary btn-sm" %>
+		<%= link_to "Marquer comme non lu", email_path(email.id), method: :put, remote: true, class: "btn btn-primary btn-sm lu" %>
 	</li> 
 </ul>
 

@@ -13,7 +13,7 @@
 				  <li class="list-group-item list-group-item-secondary">
 				    Emails
 				  </li>
-				   <% @emails.each do |email| %>
+				   <% @emails.sort.each do |email| %>
 					<%= render 'emails_list', email: email%>
 				   <% end %>
 			  </ul>

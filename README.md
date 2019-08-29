@@ -1,29 +1,15 @@
-# README
+# ********** Ajax quand tu nous tiens!!!! ********
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://ajax-fuckin-style.herokuapp.com/
 
-Things you may want to cover:
+## Dans cette appli tu pourras:
 
-* Ruby version
+==> t'auto-envoyer des emails random, en cliquant sur "Recevoir un email"
 
-* System dependencies
+==> lire chacun d'eux
 
-* Configuration
+==> les supprimers, en cliquant sur "Supprimer"
 
-* Database creation
+==> les marquers comme lu/non-lu, en cliquant.... tu vois quoi!
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-	  <li class="list-group-item list-group-item-action"><%= link_to email.object, email_path(email.id), remote: true %></li>
-
-	  <li class="list-group-item list-group-item-action"><%= @email.object %></li>
+C'est GENIAL!! ;)

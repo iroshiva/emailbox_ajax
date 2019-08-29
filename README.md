@@ -22,3 +22,8 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+	  <li class="list-group-item list-group-item-action"><%= link_to email.object, email_path(email.id), remote: true %></li>
+
+	  <li class="list-group-item list-group-item-action"><%= @email.object %></li>

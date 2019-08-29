@@ -10,14 +10,12 @@
 		<div class="col-6 col-md-4">
 		  <div class="list-group">
 		  	<ul id="email-list">
-			  <li class="list-group-item list-group-item-secondary">
-			    Emails
-			  </li>
-			   <% @emails.each do |email| %>
-				  <a href="<%= email_path(email.id)%>" class="list-group-item list-group-item-action" data-remote="true" id="email-list">
-				    <%= email.object %>
-				  </a>
-			   <% end %>
+				  <li class="list-group-item list-group-item-secondary">
+				    Emails
+				  </li>
+				   <% @emails.each do |email| %>
+					<%= render 'emails_list', email: email%>
+				   <% end %>
 			  </ul>
 			</div>
 		</div>

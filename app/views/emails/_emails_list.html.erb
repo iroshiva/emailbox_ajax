@@ -1,1 +1,3 @@
-<li class="list-group-item list-group-item-action"><%= @email.object %></li>
+<a href="<%= email_path(email.id)%>" class="list-group-item list-group-item-action" data-remote="true" id="">
+  <%= email.object %>
+</a>

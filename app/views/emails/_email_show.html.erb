@@ -6,5 +6,9 @@
 		<li class="list-group-item list-group-item-action">
 			<%= email.body %>
 		</li>
+		<li class="list-group-item list-group-item-action">
+			<%= link_to "Supprimer", email_path(email.id), method: :delete, remote: true, class: "btn btn-danger btn-sm" %>
+			<a class="btn btn-primary" href="#" role="button">Lu</a>
+		</li> 
 	</ul>
 

@@ -1,10 +1,10 @@
 
-$('.lu').on('click', function(){
-	if(email.read === true){
-		$('.lu').text("Marquer comme non lu");
-		$('.email-<%= @email.id%>').removeClass("list-group-item-dark");
-} else {
+
+<% if @email.read == true %>
+	$('.lu').text("Marquer comme non lu");
+	$('.email-<%= @email.id%>').removeClass("list-group-item-dark");
+<% else %> 
 	$('.lu').text("Marquer comme lu");
 	$('.email-<%= @email.id%>').addClass("list-group-item-dark");
-}
-});
+<% end %>
+

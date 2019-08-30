@@ -19,7 +19,7 @@ class EmailsController < ApplicationController
 
   def create
     @email = Email.new(object:Faker::Book.title,
-    body:Faker::Lorem.paragraph)
+    body:Faker::Lorem.paragraph, read:false)
     @email.save
     # flash.now[:success] = "Mail envoyé!"
     respond_to do |format|

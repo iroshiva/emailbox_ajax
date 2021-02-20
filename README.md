@@ -1,15 +1,11 @@
-# ********** Ajax quand tu nous tiens!!!! ********
+# ********** Boîte email en AJAX ********
 
-https://ajax-fuckin-style.herokuapp.com/
+Dans ce projet, tu pourras :
 
-## Dans cette appli tu pourras:
+- t'auto-envoyer des emails random, en cliquant sur "Recevoir un email"
 
-==> t'auto-envoyer des emails random, en cliquant sur "Recevoir un email"
+- lire chacun d'eux et les passer automatiquement en vu
 
-==> lire chacun d'eux
+- les supprimer
 
-==> les supprimers, en cliquant sur "Supprimer"
-
-==> les marquers comme lu/non-lu, en cliquant.... tu vois quoi!
-
-C'est GENIAL!! ;)
+- les marquers comme lu/non-lu

@@ -1,4 +1,4 @@
-# ********** Boîte email en AJAX ********
+# Boîte email en AJAX
 
 Dans ce projet, tu pourras :
 
@@ -9,3 +9,6 @@ Dans ce projet, tu pourras :
 - les supprimer
 
 - les marquers comme lu/non-lu
+
+
+Projet fait avec Ruby on Rails
